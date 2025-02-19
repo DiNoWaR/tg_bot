@@ -15,7 +15,7 @@ def get_main_menu():
     return ReplyKeyboardMarkup(
         [
             [KeyboardButton("Пароли"),
-             KeyboardButton("CRM")],
+             KeyboardButton("Аmo CRM")],
             [KeyboardButton("Контакты")]
         ],
         resize_keyboard=True
@@ -25,7 +25,7 @@ def get_main_menu():
 async def start(update: Update, context: CallbackContext) -> None:
     await update.message.reply_text(WELCOME_TEXT)
     await update.message.reply_text(
-        "Выберите действие, используя кнопки меню:",
+        "Выберите действие, используя кнопки меню",
         reply_markup=get_main_menu()
     )
 
