@@ -27,6 +27,7 @@ Artego 5G
 '''
 
 PASSWORDS = 'Пароли'
-АMO_CRM = 'Аmo CRM'
+AMO_CRM = 'Аmo CRM'
 CONTACTS = 'Контакты'
 ONBOARDING = 'Обучение'
+

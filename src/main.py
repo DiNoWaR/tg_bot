@@ -1,16 +1,14 @@
 import os
 
-from src.constants.constants import *
-
 from dotenv import load_dotenv
-from telegram import Update, InlineKeyboardButton, InlineKeyboardMarkup, ReplyKeyboardMarkup, KeyboardButton
+from telegram import Update, ReplyKeyboardMarkup, KeyboardButton
 from telegram.ext import Application, CommandHandler, CallbackContext, MessageHandler, filters
-from telegram.constants import ParseMode
+
+from src.constants.constants import *
 
 load_dotenv()
 
 BOT_TOKEN = os.getenv('TELEGRAM_BOT_TOKEN')
-ONBOARDING_DOC_LINK = os.getenv('ONBOARDING_DOC_LINK')
 
 onboarding_file_id = ''
 
@@ -18,10 +16,8 @@ onboarding_file_id = ''
 def get_main_menu():
     return ReplyKeyboardMarkup(
         [
-            [KeyboardButton(PASSWORDS),
-             KeyboardButton(АMO_CRM)],
-            [KeyboardButton(CONTACTS),
-             KeyboardButton(ONBOARDING)]
+            [KeyboardButton(PASSWORDS), KeyboardButton(AMO_CRM)],
+            [KeyboardButton(CONTACTS), KeyboardButton(ONBOARDING)]
         ],
         resize_keyboard=True
     )
@@ -29,16 +25,13 @@ def get_main_menu():
 
 async def start(update: Update, context: CallbackContext) -> None:
     await update.message.reply_text(WELCOME_TEXT)
-    await update.message.reply_text(
-        'Выберите действие, используя кнопки меню',
-        reply_markup=get_main_menu()
-    )
+    await update.message.reply_text('Выберите действие, используя кнопки меню', reply_markup=get_main_menu())
 
 
 async def menu_handler(update: Update, context: CallbackContext) -> None:
     text = update.message.text
 
-    if text == АMO_CRM:
+    if text == AMO_CRM:
         await update.message.reply_text('Вы вернулись в главное меню!', reply_markup=get_main_menu())
     elif text == PASSWORDS:
         await update.message.reply_text(PASSWORDS_TEXT)
