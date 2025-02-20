@@ -18,7 +18,7 @@ def get_main_menu():
     return ReplyKeyboardMarkup(
         [
             [KeyboardButton(PASSWORDS), KeyboardButton(AMO_CRM), KeyboardButton(HANDBOOK)],
-            [KeyboardButton(ONBOARDING), KeyboardButton(CONTACTS)]
+            [KeyboardButton(ONBOARDING), KeyboardButton(GROUPS), KeyboardButton(CONTACTS)]
         ],
         resize_keyboard=True
     )

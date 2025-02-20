@@ -26,16 +26,16 @@
       ]
     },
     {
-      "title": "contacts",
+      "title": "контакты",
       "responses": [
         {
           "type": "text",
-          "content": "📞 Контактная информация"
+          "content": "@andreey_s Андрей - Руководитель crm\n\n@spacekbbb Кирилл - фотограф, видеограф , smm\n\n@Mustafash90 Мустафа - юрист, лигал, лоер\n\n@dashazdoroviak Дарья - офис менеджер\n\n@irena_assistent Ирэна - crm менеджер"
         }
       ]
     },
     {
-      "title": "регламент",
+      "title": "регламенты",
       "responses": [
         {
           "type": "document",
@@ -49,6 +49,15 @@
         {
           "type": "document",
           "file_id": "BQACAgIAAxkBAAIBGme3Ay3moKGiVm31-Sb3uMKnAz2hAAKqaQACg4e5SSnzN3F6r7DSNgQ"
+        }
+      ]
+    },
+    {
+      "title": "группы",
+      "responses": [
+        {
+          "type": "text",
+          "content": "Пока нет групп"
         }
       ]
     }
