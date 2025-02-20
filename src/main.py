@@ -5,12 +5,13 @@ from telegram import Update, ReplyKeyboardMarkup, KeyboardButton
 from telegram.ext import Application, CommandHandler, CallbackContext, MessageHandler, filters
 
 from src.constants.constants import *
+from src.parser.config_parser import ConfigParser
 
 load_dotenv()
+bot_token = os.getenv('TELEGRAM_BOT_TOKEN')
 
-BOT_TOKEN = os.getenv('TELEGRAM_BOT_TOKEN')
-
-onboarding_file_id = ''
+parser = ConfigParser()
+bot_config = parser.parse_config()
 
 
 def get_main_menu():
@@ -24,34 +25,34 @@ def get_main_menu():
 
 
 async def start(update: Update, context: CallbackContext) -> None:
-    await update.message.reply_text(WELCOME_TEXT)
-    await update.message.reply_text('Выберите действие, используя кнопки меню', reply_markup=get_main_menu())
+    await update.message.reply_text(bot_config.welcome_message)
+    await update.message.reply_text(bot_config.welcome_message_buttons, reply_markup=get_main_menu())
 
 
 async def menu_handler(update: Update, context: CallbackContext) -> None:
-    text = update.message.text
+    text = update.message.text.lower().replace(' ', '_')
 
-    if text == AMO_CRM:
-        await update.message.reply_text('Вы вернулись в главное меню!', reply_markup=get_main_menu())
-    elif text == PASSWORDS:
-        await update.message.reply_text(PASSWORDS_TEXT)
-    elif text == CONTACTS:
-        await update.message.reply_text('contacts!')
-    elif text == ONBOARDING:
-        await update.message.reply_document(document=onboarding_file_id, caption="Onboarding Document 📄")
-    else:
-        await update.message.reply_text('Я вас не понял. Используйте кнопки меню.')
+    for item in bot_config.menu:
+        if item.title == text:
+            for response in item.responses:
+                if response.type == 'text':
+                    await update.message.reply_text(response.content)
+                if response.type == 'document':
+                    await update.message.reply_document(document=response.file_id)
+            return
+
+    await update.message.reply_text(bot_config.default_reply)
 
 
 async def get_file_id(update: Update, context: CallbackContext) -> None:
     document = update.message.document
     if document:
         file_id = document.file_id
-        onboarding_file_id = file_id
+        await update.message.reply_text(f"Ваш file_id: {file_id}")
 
 
 def main():
-    app = Application.builder().token(BOT_TOKEN).build()
+    app = Application.builder().token(bot_token).build()
 
     app.add_handler(CommandHandler('start', start))
     app.add_handler(MessageHandler(filters.TEXT & ~filters.COMMAND, menu_handler))
