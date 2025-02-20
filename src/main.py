@@ -17,8 +17,8 @@ bot_config = parser.parse_config()
 def get_main_menu():
     return ReplyKeyboardMarkup(
         [
-            [KeyboardButton(PASSWORDS), KeyboardButton(AMO_CRM)],
-            [KeyboardButton(CONTACTS), KeyboardButton(ONBOARDING)]
+            [KeyboardButton(PASSWORDS), KeyboardButton(AMO_CRM), KeyboardButton(HANDBOOK)],
+            [KeyboardButton(ONBOARDING), KeyboardButton(CONTACTS)]
         ],
         resize_keyboard=True
     )

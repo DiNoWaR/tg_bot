@@ -4,15 +4,15 @@
   "default_reply": "Я вас не понял. Используйте кнопки меню",
   "menu": [
     {
-      "title": "amo_crm",
+      "title": "amo_сrm",
       "responses": [
         {
           "type": "text",
-          "content": "AMO CRM - описание CRM системы"
+          "content": "2\uFE0F⃣ Наш отдел продаж работает в Аmo CRM, и от правильности ее ведения зависит эффективность нашего маркетинга, количество распределенных лидов и точность статистики по каждому брокеру. \n\nПоэтому обязательно ознакомься с обучением и стандартами по правильному ведению CRM\n\nСсылка \uD83D\uDC49https://drive.google.com/drive/folders/1uKiQ0b5Y4TTIY3XnGH0U0U2TIdZcL3qT\n\nИ напиши нашему операционному менеджеру @andreey_strs, который занимается распределением лидов и контролем качества, чтобы быть с ним на связи и получить позже доступ для прозвона архивной базы."
         },
         {
-          "type": "text",
-          "content": "Ссылка на CRM: https://crm.example.com"
+          "type": "document",
+          "file_id": "BQACAgIAAxkBAAPwZ7b_CzHzJVhjJEwxE2vb6PaSKbcAAmZpAAKDh7lJtIeWCnSzX942BA"
         }
       ]
     },
@@ -35,16 +35,20 @@
       ]
     },
     {
-      "title": "onboarding",
+      "title": "регламент",
       "responses": [
         {
-          "type": "text",
-          "content": "Добро пожаловать! Ознакомьтесь с документацией:"
-        },
+          "type": "document",
+          "file_id": "BQACAgIAAxkBAAIBM2e3A8OVfJutumBI9FLHWRU0HCsNAAIBZgACf6q4SdEMm8plDlvqNgQ"
+        }
+      ]
+    },
+    {
+      "title": "handbook",
+      "responses": [
         {
           "type": "document",
-          "file_id": "BQACAgQAAxkBAAICX2X...",
-          "caption": "📄 Onboarding Guide"
+          "file_id": "BQACAgIAAxkBAAIBGme3Ay3moKGiVm31-Sb3uMKnAz2hAAKqaQACg4e5SSnzN3F6r7DSNgQ"
         }
       ]
     }
