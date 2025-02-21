@@ -1,6 +1,7 @@
 {
   "welcome_message": "Дорогой новый сотрудник,\nдобро пожаловать в нашу команду! \n\nМы очень рады, что ты присоединился к нам и готовы помочь тебе в адаптации в новой среде. \n\nМы верим, что наши ценности соответствуют твоим личным убеждениям и целям, и мы знаем, что ты точно станешь неотъемлемой частью нашей команды. С твоих первых дней в компании мы сделаем все возможное, чтобы ты ощутил себя комфортно и уверенно. \n\nТвои знания и опыт точно пригодятся в работе и улучшат результаты компании, а мы будем рады помочь тебе в дальнейшем развитии и обучении. \n\nЕще раз добро пожаловать! Мы с нетерпением ждем начала работы с тобой.\n\nС наилучшими пожеланиями, \nКоманда Artego Estate\uD83E\uDD0D",
   "welcome_message_buttons": "Выберите действие, используя кнопки меню",
+  "handbook_file_id": "BQACAgIAAxkBAAIBGme3Ay3moKGiVm31-Sb3uMKnAz2hAAKqaQACg4e5SSnzN3F6r7DSNgQ",
   "default_reply": "Я вас не понял. Используйте кнопки меню",
   "menu": [
     {
@@ -44,11 +45,15 @@
       ]
     },
     {
-      "title": "handbook",
+      "title": "обучение",
       "responses": [
         {
           "type": "document",
-          "file_id": "BQACAgIAAxkBAAIBGme3Ay3moKGiVm31-Sb3uMKnAz2hAAKqaQACg4e5SSnzN3F6r7DSNgQ"
+          "file_id": "BQACAgIAAxkBAAIEAAFnuGRaIVyw6qpwnNMO-acQZHtcTgACuGoAAug1wUl2GLZaSFcY2DYE"
+        },
+        {
+          "type": "document",
+          "file_id": "BQACAgIAAxkBAAIEEGe4ZMHhimj_UyhJyo8NI-4c62qFAAJuXwACtnfASQZJCXYjCNKDNgQ"
         }
       ]
     },

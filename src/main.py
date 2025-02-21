@@ -17,7 +17,7 @@ bot_config = parser.parse_config()
 def get_main_menu():
     return ReplyKeyboardMarkup(
         [
-            [KeyboardButton(PASSWORDS), KeyboardButton(AMO_CRM), KeyboardButton(HANDBOOK)],
+            [KeyboardButton(PASSWORDS), KeyboardButton(AMO_CRM), KeyboardButton(LEARNING)],
             [KeyboardButton(ONBOARDING), KeyboardButton(GROUPS), KeyboardButton(CONTACTS)]
         ],
         resize_keyboard=True
@@ -26,6 +26,7 @@ def get_main_menu():
 
 async def start(update: Update, context: CallbackContext) -> None:
     await update.message.reply_text(bot_config.welcome_message)
+    await update.message.reply_document(bot_config.handbook_file_id)
     await update.message.reply_text(bot_config.welcome_message_buttons, reply_markup=get_main_menu())
 
 

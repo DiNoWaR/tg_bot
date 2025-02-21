@@ -1,6 +1,6 @@
 PASSWORDS = 'Пароли'
 AMO_CRM = 'Amo СRM'
-HANDBOOK = 'Handbook'
+LEARNING = 'Обучение'
 CONTACTS = 'Контакты'
 ONBOARDING = 'Регламенты'
 GROUPS = 'Группы'

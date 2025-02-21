@@ -18,6 +18,7 @@ class MenuItem(BaseModel):
 class BotConfig(BaseModel):
     welcome_message: str
     welcome_message_buttons: str
+    handbook_file_id: str
     default_reply: str
     menu: List[MenuItem]
 
