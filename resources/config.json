@@ -36,11 +36,23 @@
       ]
     },
     {
-      "title": "регламенты",
+      "title": "регламент",
       "responses": [
         {
           "type": "document",
           "file_id": "BQACAgIAAxkBAAIBM2e3A8OVfJutumBI9FLHWRU0HCsNAAIBZgACf6q4SdEMm8plDlvqNgQ"
+        },
+        {
+          "type": "document",
+          "file_id": "BQACAgIAAxkBAAIF2We9wNp1EFwprRI-CGWNFmOYUZYuAALEZQACP4zwSYEcarw9qsekNgQ"
+        },
+        {
+          "type": "document",
+          "file_id": "BQACAgIAAxkBAAIF22e9wPQuVBPQmw0Kj3pTwXGIwMrzAALGZQACP4zwScZ9z4i__kEjNgQ"
+        },
+        {
+          "type": "document",
+          "file_id": "BQACAgIAAxkBAAIF3We9wQ98HeIYZsyBi1ldgTg1ZD-PAALPZQACP4zwSQFxeBNuTQdWNgQ"
         }
       ]
     },
@@ -48,12 +60,24 @@
       "title": "обучение",
       "responses": [
         {
-          "type": "document",
-          "file_id": "BQACAgIAAxkBAAIEAAFnuGRaIVyw6qpwnNMO-acQZHtcTgACuGoAAug1wUl2GLZaSFcY2DYE"
+          "type": "text",
+          "content": "наш сайт artego.ae"
         },
         {
           "type": "document",
           "file_id": "BQACAgIAAxkBAAIEEGe4ZMHhimj_UyhJyo8NI-4c62qFAAJuXwACtnfASQZJCXYjCNKDNgQ"
+        },
+        {
+          "type": "document",
+          "file_id": "BQACAgIAAxkBAAIEAAFnuGRaIVyw6qpwnNMO-acQZHtcTgACuGoAAug1wUl2GLZaSFcY2DYE"
+        },
+        {
+          "type": "text",
+          "content": "https://docs.google.com/spreadsheets/d/1LNTAvjCwnG6rp9ZdnnfxLtreyonsiFxziLfoclg4KnE/edit?gid=0#gid=0"
+        },
+        {
+          "type": "document",
+          "file_id": "BQACAgIAAxkBAAIFzWe9wDRnbz9a_8JSeiqXj0eOy_PyAAK0ZQACP4zwSa0ZluHO69IFNgQ"
         }
       ]
     },
@@ -63,6 +87,24 @@
         {
           "type": "text",
           "content": "https://docs.google.com/spreadsheets/d/14b-OPuzKwU1t5mEwljiT5dkQKyUtPD6J1iaMf0eSJXA/edit?usp=sharing"
+        }
+      ]
+    },
+    {
+      "title": "аналитика_дубай",
+      "responses": [
+        {
+          "type": "text",
+          "content": "https://dxbinteract.com/top-house-sales-dubai-areas"
+        }
+      ]
+    },
+    {
+      "title": "secondary",
+      "responses": [
+        {
+          "type": "text",
+          "content": "https://docs.google.com/spreadsheets/d/1CI5BzQnBNATZd8EDbuRC7W_B6tRwmjXHVY_ppPUNsa4/edit?gid=0#gid=0"
         }
       ]
     }
