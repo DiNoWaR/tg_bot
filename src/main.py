@@ -11,6 +11,7 @@ load_dotenv()
 bot_token = os.getenv('TELEGRAM_BOT_TOKEN')
 
 parser = ConfigParser()
+
 bot_config = parser.parse_config()
 
 
