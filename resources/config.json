@@ -22,7 +22,7 @@
       "responses": [
         {
           "type": "text",
-          "content": "1\uFE0F⃣ Чтобы вы всегда были на связи⭐\uFE0F\n\nНаш Wi-Fi:\nArtego 5G\nПароль: Artego$real@14\n\nДля печати документов необходимо подключиться к wi-fi Artego и выбрать любой принтер \n\nПароль: Artego$real@14"
+          "content": "1\uFE0F⃣ Чтобы вы всегда были на связи⭐\uFE0F\n\nНаш Wi-Fi:\nArtego 5G\nПароль: Artego$GoldenKey\n\nДля печати документов необходимо подключиться к wi-fi Artego и выбрать любой принтер \n\nПароль: Artego$GoldenKey"
         }
       ]
     },
@@ -31,7 +31,7 @@
       "responses": [
         {
           "type": "text",
-          "content": "Андрей - Руководитель CRM @andreey_s\n\nКирилл - Фотограф, видеограф, smm @spacekbbb\n\nМустафа - Юрист, лигал @Mustafash90\n\nДарья - Офис-менеджер @dashazdoroviak\n\nИрэна - CRM-менеджер @irena_assistent"
+          "content": "Андрей - Руководитель CRM @andreey_s\n\nКирилл - Фотограф, видеограф, smm @spacekbbb\n\nМустафа - Юрист, лигал @Mustafash90\n\nДарья - Офис-менеджер @dashazdoroviak\n\nИрэна - CRM-менеджер @irena_assistent\n\nВиктория - Специалист baut,property,dubizzle"
         }
       ]
     },
@@ -53,6 +53,42 @@
         {
           "type": "document",
           "file_id": "BQACAgIAAxkBAAIF3We9wQ98HeIYZsyBi1ldgTg1ZD-PAALPZQACP4zwSQFxeBNuTQdWNgQ"
+        },
+        {
+          "type": "document",
+          "file_id": "BQACAgIAAxkBAAII2WgE5Fw3RLff_8tjeohVKkSOtHOdAALEcwAC9fEoSLHbcsxPIpC6NgQ"
+        },
+        {
+          "type": "document",
+          "file_id": "BQACAgIAAxkBAAII22gE5K6zDm30tUp_wt-c6YukLW8lAALJcwAC9fEoSB8GHWdLzByTNgQ"
+        },
+        {
+          "type": "document",
+          "file_id": "BQACAgIAAxkBAAII3WgE5QIlI3iQ2xT5XTP-QVdupTCNAALNcwAC9fEoSOkjJe37qK5VNgQ"
+        },
+        {
+          "type": "document",
+          "file_id": "BQACAgIAAxkBAAII32gE5TODp9HivCVhNA6ruaT3hIMTAALQcwAC9fEoSFj6RpLfsbiFNgQ"
+        },
+        {
+          "type": "document",
+          "file_id": "BQACAgIAAxkBAAII4WgE5bOIiOfLS1lsRAd-_SIcezyVAALYcwAC9fEoSAABaPNOdJ-7sTYE"
+        },
+        {
+          "type": "document",
+          "file_id": "BQACAgIAAxkBAAII42gE5hNv5fQq8bOW4l76z97KY5mlAALbcwAC9fEoSGJsIAkBR62PNgQ"
+        },
+        {
+          "type": "document",
+          "file_id": "BQACAgIAAxkBAAII5WgE5muWD2uU5qmdQlr6-8Wm4zMlAALhcwAC9fEoSJVF6bGHW_nmNgQ"
+        },
+        {
+          "type": "document",
+          "file_id": "BQACAgIAAxkBAAII52gE5sgw28yP57OfctUNefevUCj6AALncwAC9fEoSPNt1yMhu1qMNgQ"
+        },
+        {
+          "type": "document",
+          "file_id": "BQACAgIAAxkBAAII6WgE5wJcJ6WMZCapWp2HvLJDuAUxAALwcwAC9fEoSE3e1KsFAv7lNgQ"
         }
       ]
     },
